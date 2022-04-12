@@ -6,9 +6,9 @@ const Modal = (props) => {
       <div className="modalWindow">
         <div className="modalContent">
           <p>Oops, game over, man!</p>
-          <p className="result"></p>
-          <button type="button" className="closeButton">
-            Close
+          <span className="result">{props.score}</span>
+          <button type="button" className="closeButton" onClick={props.reload}>
+            <i class="fa-solid fa-circle-xmark fa-3x"></i>
           </button>
         </div>
       </div>

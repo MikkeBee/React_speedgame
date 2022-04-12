@@ -7,7 +7,7 @@ const Header = (props) => {
       <div className="score">Your score</div>
 
       <div className="scoreArea">
-        <span id="score">0</span>
+        <span id="score">{props.score}</span>
       </div>
     </section>
   );
