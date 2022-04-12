@@ -1,13 +1,7 @@
 import React from "react";
 
-const StopButton = (props) => {
-  return (
-    <div className="buttons">
-      <button type="button" className="button2" onClick={props.gameEnd}>
-        Stop game
-      </button>
-    </div>
-  );
+const Buttons = (props) => {
+  return <button type={props.type || "button"}></button>;
 };
 
-export default StopButton;
+export default Buttons;

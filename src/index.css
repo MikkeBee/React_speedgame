@@ -91,7 +91,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 #circle i {
@@ -192,8 +192,8 @@ h1 {
 }
 
 .circle6.active {
-  background-color: #dd00ff;
-  box-shadow: 0.2rem 0.2rem 2rem #c70ee3;
+  background-color: #ff0000;
+  box-shadow: 0.2rem 0.2rem 2rem #f02d2d;
   border-style: solid;
   border-width: thin;
 }
