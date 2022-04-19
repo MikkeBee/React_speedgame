@@ -9,7 +9,7 @@ const Circles = (props) => {
       id="circle"
       onClick={() => props.click(props.circle.id)}
     >
-      <i className={`fa-solid ${props.circle.backimg}`}></i>
+      <i className={`fa-solid ${props.circle.backimg} fa-4x`}></i>
     </div>
   );
 };

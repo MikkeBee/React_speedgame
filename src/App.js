@@ -21,8 +21,7 @@ class App extends Component {
     score: 0,
     current: 0,
     rounds: 0,
-    pace: 2000,
-    message: "",
+    pace: 1500,
     gameOn: false,
     gameOff: false,
   };
