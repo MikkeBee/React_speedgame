@@ -53,7 +53,7 @@ class App extends Component {
   nextCircle = () => {
     let nextActive;
     do {
-      nextActive = getRndInteger(1, 6);
+      nextActive = getRndInteger(1, 4); //must change 4 to 6 when all circles added
     } while (nextActive === this.state.current);
     this.setState({
       current: nextActive,
