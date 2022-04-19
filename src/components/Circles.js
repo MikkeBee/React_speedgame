@@ -3,6 +3,7 @@ import React from "react";
 const Circles = (props) => {
   return (
     <div
+      style={{ pointerEvents: props.disabled ? "auto" : "none" }}
       key={props.circle.id}
       className={`circle${props.circle.id} ${props.active ? "active" : ""}`}
       id="circle"

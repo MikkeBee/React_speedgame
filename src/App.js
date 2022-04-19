@@ -60,11 +60,11 @@ class App extends Component {
       pace: this.state.pace * 0.95,
     });
 
+    this.timer = setTimeout(this.nextCircle, this.state.pace);
+
     if (this.state.rounds > 3) {
       this.gameEnder();
       return;
-    } else {
-      this.timer = setTimeout(this.nextCircle, this.state.pace);
     }
   };
 
@@ -93,6 +93,7 @@ class App extends Component {
               circle={circle}
               active={this.state.current === circle.id}
               click={this.clickHandler}
+              disabled={this.state.gameOn}
             />
           ))}
         </div>
