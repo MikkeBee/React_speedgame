@@ -32,7 +32,7 @@ class App extends Component {
   gameStarter = () => {
     this.nextCircle();
     startMusic.play();
-    startMusic.loop();
+    startMusic.loop = true;
     this.setState({
       gameOn: true,
     });

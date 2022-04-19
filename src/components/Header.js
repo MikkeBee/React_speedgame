@@ -4,7 +4,7 @@ const Header = (props) => {
   return (
     <section className="mainBody">
       <h1>
-        <i class="fa-solid fa-align-right fa-2xs"></i>
+        <i className="fa-solid fa-align-right fa-2xs"></i>
         Speedgame
       </h1>
       <div className="score">Your score</div>
