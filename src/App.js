@@ -21,6 +21,7 @@ class App extends Component {
     score: 0,
     current: 0,
     rounds: 0,
+    clicked: false,
     pace: 1500,
     gameOn: false,
     gameOff: false,
@@ -31,6 +32,7 @@ class App extends Component {
   gameStarter = () => {
     this.nextCircle();
     startMusic.play();
+    startMusic.loop();
     this.setState({
       gameOn: true,
     });
