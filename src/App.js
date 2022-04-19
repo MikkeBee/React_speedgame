@@ -22,6 +22,7 @@ class App extends Component {
     current: 0,
     rounds: 0,
     pace: 2000,
+    message: "",
     gameOn: false,
     gameOff: false,
   };
@@ -56,12 +57,14 @@ class App extends Component {
     this.setState({
       current: nextActive,
       rounds: this.state.rounds + 1,
+      pace: this.state.pace * 0.95,
     });
 
     if (this.state.rounds > 3) {
       this.gameEnder();
+      return;
     } else {
-      this.timer = setTimeout(this.nextCircle, 1000);
+      this.timer = setTimeout(this.nextCircle, this.state.pace);
     }
   };
 

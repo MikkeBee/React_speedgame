@@ -35,6 +35,7 @@ h1 {
   animation-name: myAnimation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  transform: skewX(-20deg);
 }
 
 @keyframes myAnimation {
@@ -159,8 +160,8 @@ h1 {
 }
 
 .circle4.active {
-  background-color: #ff7a32;
-  box-shadow: 0.2rem 0.2rem 2rem #ff8341;
+  background-color: #ff5f1f;
+  box-shadow: 0.2rem 0.2rem 2rem #d85623;
   border-style: solid;
   border-width: thin;
 }
