@@ -14,7 +14,7 @@ const stopMusic = new Audio(stopSong);
 
 const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+}; //If there is a problem with selecting random circles, removing +1 may fix it
 
 class App extends Component {
   state = {
